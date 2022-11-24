@@ -1,0 +1,49 @@
+@use "./variables";
+
+//Google fonts 
+
+//H1, h2, h3 & li fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+//body font
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki&display=swap');
+
+//h4 & button font
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+//font variables
+$heading-font: 'Poppins', sans-serif;
+$body-font: 'Noto Serif Khojki', serif;
+$button-font: 'Noto Sans JP', sans-serif;
+
+body {
+	font-family: variables.$body-font;
+	color: variables.$font-color;
+    line-height: 28px;
+}
+
+h1, h2, h3, ul {
+	font-family: variables.$heading-font;
+}
+
+h1 {
+	font-size: 56px;
+}
+
+h3, h4 {
+	margin: 0;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: variables.$font-color;
+	
+}
+
+
+

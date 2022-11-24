@@ -1,0 +1,85 @@
+@use "./variables";
+
+/* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;*/
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: variables.$base-font-size;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	text-decoration: none;
+	padding: 0;
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.button {
+    font-family: variables.$button-font;
+    text-align: center;
+    color: variables.$font-color;
+    background: variables.$pink1;
+    border: none;
+	font-size: 18px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+	text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+	background: variables.$pale-orange;
+}
+
+
+h2 {
+	text-align: center;
+	margin: 0;
+	padding: 40px;
+}
+
+
+.dark-mode {
+	.fa-lightbulb {
+		color: variables.$cream;
+	}
+	.welcome {
+		background: url(../assets/pexels-sam-willis-3934512.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		color: variables.$cream;
+		.bar {
+			background-color: variables.$cream;
+		}
+		.nav-link {
+			color: variables.$cream;
+		}
+	}
+	#about-me, #projects, footer {
+		background: variables.$font-color;
+		color: variables.$cream;
+	}
+	#skills, #contact {
+		background: variables.$font-color;
+		color: variables.$purple2;
+		i {
+			color: variables.$purple2;
+		}
+	}
+	#projects ul li {
+		background-color: variables.$dark-blue;
+	}
+	
+}

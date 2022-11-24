@@ -1,0 +1,92 @@
+@use "./variables";
+
+.welcome {
+	margin: 0;
+	background-image: url(../assets/pexels-ithalu-dominguez-907485.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 80vh;
+	.wrapper {
+		text-align: center;
+	}
+}
+
+/*MENU STYLES*/
+
+	.nav-bar {
+
+		min-height: 70px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 24px;
+	}
+
+	.main-menu {
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		position: fixed;
+		right: -100%;
+		gap: 40px;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+	}
+
+	.main-menu.active{
+		right: 0;
+	}
+
+
+
+	.nav-link {
+		transition: 0.3s ease;
+		margin: 16px 0;
+	}
+
+	.nav-link:hover,
+	.nav-link:focus {
+		text-decoration: variables.$light-blue underline solid 3px;
+	}
+
+	.hamburger {
+		display: block;
+		cursor: pointer;
+	}
+
+	.hamburger.active .bar:nth-child(2) {
+		opacity: 0;	
+	}
+
+	.hamburger.active .bar:nth-child(1){
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamburger.active .bar:nth-child(3){
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.bar {
+		display: block;
+		width: 25px;
+		height: 3px;
+		margin: 5px auto;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		background-color: variables.$font-color;
+	}
+
+	/*DARK MODE STYLES*/
+
+	.fa-lightbulb {
+		font-size: 2rem;
+		transform: translate(-50%, -50%);
+		cursor: pointer;
+		margin-left: 10px;
+		margin-top: 30px;
+	}
+
+

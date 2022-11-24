@@ -1,0 +1,10 @@
+@use "./variables";
+
+footer {
+	background: variables.$cream;
+	p{
+		margin: 0;
+		padding: 20px;
+		text-align: center;
+	}
+}

@@ -1,0 +1,28 @@
+@use "./variables";
+
+#contact {
+	background: variables.$purple2;
+	height: 60vh;
+	.wrapper {
+		text-align: center;
+	}
+	p {
+		margin: 40px auto;
+		width: 40%;
+	}
+}
+
+.contact-icons {
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	li {
+		padding: 20px;
+		a{
+			text-decoration: none;
+		}
+		i {
+			color: variables.$body-font;
+		}
+	}
+}
