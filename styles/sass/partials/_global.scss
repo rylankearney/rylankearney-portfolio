@@ -72,14 +72,16 @@ h2 {
 		color: variables.$cream;
 	}
 	#skills, #contact {
-		background: variables.$font-color;
+		background-color: variables.$font-color;
 		color: variables.$purple2;
 		i {
 			color: variables.$purple2;
 		}
 	}
-	#projects ul li {
+	#projects ul li,
+	footer {
 		background-color: variables.$dark-blue;
 	}
+
 	
 }

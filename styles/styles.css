@@ -319,13 +319,14 @@ h2 {
   color: #faf3e3;
 }
 .dark-mode #skills, .dark-mode #contact {
-  background: #2e3852;
+  background-color: #2e3852;
   color: #ffdafa;
 }
 .dark-mode #skills i, .dark-mode #contact i {
   color: #ffdafa;
 }
-.dark-mode #projects ul li {
+.dark-mode #projects ul li,
+.dark-mode footer {
   background-color: #03436d;
 }
 
