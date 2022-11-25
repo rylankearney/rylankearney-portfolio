@@ -34,12 +34,13 @@
                     <span class="bar"></span>
                 </div>
             </nav>
-            <div class="wrapper">
-                <h1>Hello!</h1>
-                <p>My name is Rylan Kearney,</p>
-                <p>and I'm a Toronto-based Front End Web Developer.</p>
+        <div class="wrapper">
+            <div class="header-text">
+                <h1>Rylan Kearney</h1>
+                <p>Toronto-based Front End Web Developer</p>
                 <a class="button" href="mailto:hello@rylankearney.com">Get in Touch</a>
-        </div>
+            </div><!--end of .header-text-->
+        </div><!--end of .wrapper-->
      </header>
      <main>
         <section id="about-me">
@@ -54,27 +55,27 @@
                 <h2>Skills</h2>
                 <ul class="skill-list">
                     <li>
-                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-html5" alt="HTML5 Logo"></i>
                         <p>HTML5</p>
                     </li>
                     <li>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <p>CSS</p>
+                        <i class="fa-brands fa-css3-alt" alt="CSS3 Logo"></i>
+                        <p>CSS3</p>
                     </li>
                     <li>
-                        <i class="fa-brands fa-sass"></i>
+                        <i class="fa-brands fa-sass" alt="SASS Logo"></i>
                         <p>SASS</p>
                     </li>
                     <li>
-                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-js" alt="JavaScript Logo"></i>
                         <p>Javascript</p>
                     </li>
                     <li>
-                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-react" alt="React Logo"></i>
                         <p>React</p>
                     </li>
                     <li>
-                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-github" alt="GitHub Logo"></i>
                         <p>Git/Github</p>
                     </li>
                 </ul>
@@ -83,47 +84,72 @@
         <section id="projects">
             <div class="wrapper">
                 <h2>Recent Projects</h2>
-                <ul class="projects-list">
-                    <li>
-                        <img src="./assets/sanc-helpers.png" alt="Sanctuary Helpers Project">
-                        <h3>Sanctuary Helpers</h3>
-                        <h4>HTML, CSS, SASS, Responsive Design</h4>
-                        <h4>Solo Project</h4>
-                        <p><a class="button" href="">View Live</a> <a class="button" href="">View Code</a></p>
-                    </li>
-                    <li>
-                        <img src="./assets/spirit.png" alt="Holiday Spirit Project">
-                        <h3>Are You in the "Spirit"?</h3>
-                        <h4>HTML, CSS, SASS, Responsive Design, JS, API Calls</h4>
-                        <h4>Paired Project</h4>
-                        <p><a class="button" href="">View Live</a> <a class="button" href="">View Code</a></p>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                            <h3></h3>
-                                <h4></h4>
-                                <p><a class="button" href="">View Live</a> <a class="button" href="">View Code</a></p>
-                        </img>
-                    </li>
-                    <!-- <li>
-                        <img src="" alt="">
-                            <h3>
-                                <h4>
-                                    <p><a class="button" href="">View Live</a> <a class="button" href="">View Code</a></p>
-                                </h4>
-                            </h3>
-                        </img>
-                    </li>-->
-                </ul>
-            </div>
+                    <div class="carousel"></div>
+                    <button class="carousel-button left-button"><i class="fa-solid fa-arrow-left" alt="Left Arrow Icon"></i></button>
+                        <div class="carousel-container">
+                            <ul class="projects-list">
+                                <li class="slide current">
+                                    <div class="list-item-container">
+                                        <img src="./assets/spirit.png" alt="Holiday Spirit Project">
+                                        <h3>Are You in the "Spirit"?</h3>
+                                        <h4>HTML, CSS, SASS, Responsive Design, JS, API Calls</h4>
+                                        <h4>Paired Project</h4>
+                                        <p><a class="button" href="">View Live</a> <a class="button" href="">View Code</a></p>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <div class="list-item-container">
+                                        <img src="./assets/sanc-helpers.png" alt="Sanctuary Helpers Project">
+                                        <h3>Sanctuary Helpers</h3>
+                                        <h4>HTML, CSS, SASS, Responsive Design</h4>
+                                        <h4>Solo Project</h4>
+                                        <p><a class="button" href="">View Live</a> <a class="button" href="">View Code</a></p>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <div class="list-item-container">
+                                        <img src="./assets/galass.png" alt="Galass Handbags Project">
+                                        <h3>Galass Handbags</h3>
+                                        <h4>HTML, CSS, SASS, Responsive Design</h4>
+                                        <h4>Solo Project</h4>
+                                        <p><a class="button" href="">View Live</a> <a class="button" href="">View Code</a></p>
+                                        </img>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!--end of .carousel-container-->
+                    <button class="carousel-button right-button">
+                        <i class="fa-solid fa-arrow-right" alt="Right Arrow Icon"></i>
+                    </button>
+
+                        <div class="carousel-tracker">
+                            <button class="indicator"></button>
+                            <button class="indicator"></button>
+                            <button class="indicator"></button>
+                        </div><!--end of .carousel-tracker-->
+
+                </div><!--end of .carousel-->
+            </div><!--end of wrapper-->
         </section>
         <section id="contact">
             <div class="wrapper">
                 <h2>Contact</h2>
                 <ul class="contact-icons">
-                    <li><a href="https://www.linkedin.com/in/rylan-kearney-16205037/"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/rylankearney"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="mailto:rylanik@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/rylan-kearney-16205037/">
+                            <i class="fa-brands fa-linkedin" alt="LinkedIn Logo Icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/rylankearney">
+                            <i class="fa-brands fa-github" alt="GitHub Logo Icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:rylanik@gmail.com">
+                            <i class="fa-solid fa-envelope" alt="E-mail Icon"></i>
+                        </a>
+                    </li>
                 </ul>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui commodi dolorum mollitia.</p>
                 <a class="button" href="mailto:hello@rylankearney.com">E-mail me!</a>
