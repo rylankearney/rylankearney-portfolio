@@ -57,7 +57,7 @@ const slideWidth = slides[0].getBoundingClientRect().width;
 
 //arrange slides next to each other
 const setPosition = (slide, index) => {
-	slide.style.left = slideWidth * (index * 2) + 'px';
+	slide.style.left = slideWidth * (index * 2.5) + 'px';
 }
 
 slides.forEach(setPosition);
@@ -68,12 +68,18 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
 	targetSlide.classList.add('current');
 }
 
+const updateDots = (currentDot, targetDot) => {
+	currentDot.classList.remove('current');
+	targetDots.classList.add('current');
+}
+
 //Click left arrow = move slides left
 backButton.addEventListener('click', e => {
 	const currentSlide = track.querySelector('.current');
 	const prevSlide = currentSlide.previousElementSibling;
 
 	moveToSlide(track, currentSlide, prevSlide);
+	updateDots(currentDot, targetDots)
 })
 
 
@@ -104,4 +110,5 @@ dotsMenu.addEventListener('click', e => {
 	const targetSlide = slides[targetIndex];
 
 	moveToSlide(track, currentSlide, targetSlide)
+
 })

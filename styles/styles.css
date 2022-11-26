@@ -336,7 +336,7 @@ h2 {
   background-color: #faf3e3;
 }
 
-.welcome {
+header {
   margin: 0;
   background-image: url(../assets/pexels-ithalu-dominguez-907485.jpg);
   background-size: cover;
@@ -344,10 +344,10 @@ h2 {
   background-position: center;
   height: 80vh;
 }
-.welcome .wrapper {
+header .wrapper {
   text-align: center;
 }
-.welcome .header-text {
+header .header-text {
   padding-top: 50px;
 }
 
@@ -438,6 +438,7 @@ h2 {
   cursor: pointer;
   margin-left: 10px;
   margin-top: 30px;
+  z-index: 1;
 }
 
 #about-me {
@@ -506,13 +507,14 @@ h2 {
   border: 0;
   cursor: pointer;
   font-size: 1.8rem;
+  color: #2e3852;
 }
 #projects .left-button {
-  left: 50px;
+  left: 1%;
   z-index: 1;
 }
 #projects .right-button {
-  right: 50px;
+  right: 1%;
 }
 #projects .carousel-tracker {
   position: absolute;
@@ -608,4 +610,96 @@ footer p {
   margin: 0;
   padding: 20px;
   text-align: center;
+}
+
+@media (max-width: 740px) {
+  header .header-text {
+    padding-top: 120px;
+  }
+  header h1 {
+    font-size: 46px;
+  }
+  .main-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #faf3e3;
+    gap: 0px;
+    padding-top: 50px;
+  }
+  .dark-mode .main-menu {
+    background-color: #2e3852;
+  }
+  #about-me p,
+#contact p {
+    width: 70%;
+  }
+  .skill-list li {
+    margin: 55px;
+  }
+}
+@media (max-width: 615px) {
+  .skill-list li {
+    margin: 40px;
+  }
+}
+@media (max-width: 515px) {
+  #projects .left-button {
+    left: 0;
+  }
+  #projects .right-button {
+    right: 0;
+  }
+  .skill-list li {
+    margin: 30px;
+  }
+}
+@media (max-width: 450px) {
+  header h1 {
+    font-size: 30px;
+  }
+  header p {
+    font-size: 0.8rem;
+  }
+  #about-me p {
+    width: 90%;
+  }
+  .skill-list li {
+    margin: 25px;
+  }
+  .skill-list li i {
+    font-size: 35px;
+  }
+  .fa-chevron-right,
+.fa-chevron-left {
+    font-size: 20px;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 395px) {
+  .skill-list li {
+    margin: 37px;
+  }
+  .skill-list li i {
+    font-size: 35px;
+  }
+}
+@media (max-width: 320px) {
+  .skill-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skill-list li {
+    width: 100%;
+  }
+  #projects .projects-list li {
+    height: 500px;
+  }
+  #projects .projects-list li p .button {
+    padding: 10px 5px;
+  }
 }
