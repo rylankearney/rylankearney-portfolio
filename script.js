@@ -8,7 +8,7 @@ hamburger.addEventListener("click", () => {
 	navMenu.classList.toggle("active");
 })
 
-document.querySelectorAll("nav-link").forEach(n => n.addEventListener("click", () => {
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
 	hamburger.classList.remove("active");
 	navMenu.classList.remove("active");
 }))
@@ -57,7 +57,7 @@ const slideWidth = slides[0].getBoundingClientRect().width;
 
 //arrange slides next to each other
 const setPosition = (slide, index) => {
-	slide.style.left = slideWidth * (index * 2.5) + 'px';
+	slide.style.left = slideWidth * (index * 2) + 'px';
 }
 
 slides.forEach(setPosition);
@@ -68,18 +68,12 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
 	targetSlide.classList.add('current');
 }
 
-const updateDots = (currentDot, targetDot) => {
-	currentDot.classList.remove('current');
-	targetDots.classList.add('current');
-}
-
 //Click left arrow = move slides left
 backButton.addEventListener('click', e => {
 	const currentSlide = track.querySelector('.current');
 	const prevSlide = currentSlide.previousElementSibling;
 
 	moveToSlide(track, currentSlide, prevSlide);
-	updateDots(currentDot, targetDots)
 })
 
 
@@ -110,5 +104,4 @@ dotsMenu.addEventListener('click', e => {
 	const targetSlide = slides[targetIndex];
 
 	moveToSlide(track, currentSlide, targetSlide)
-
 })

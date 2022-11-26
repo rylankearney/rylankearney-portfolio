@@ -452,7 +452,7 @@ header .header-text {
   border-radius: 50%;
 }
 #about-me p {
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -490,6 +490,7 @@ header .header-text {
   height: 90vh;
   position: relative;
   overflow: hidden;
+  /*.hidden {display: none;}*/
 }
 #projects .carousel {
   position: relative;
