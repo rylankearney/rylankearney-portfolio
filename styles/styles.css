@@ -325,11 +325,10 @@ h2 {
 .dark-mode #skills i, .dark-mode #contact i {
   color: #ffdafa;
 }
-.dark-mode #projects ul li,
 .dark-mode footer {
   background-color: #03436d;
 }
-.dark-mode .carousel-button {
+.dark-mode #projects .carousel-button {
   color: #faf3e3;
 }
 .dark-mode #project .carousel-tracker .indicator {
@@ -511,11 +510,11 @@ header .header-text {
   color: #2e3852;
 }
 #projects .left-button {
-  left: 1%;
+  left: 60px;
   z-index: 1;
 }
 #projects .right-button {
-  right: 1%;
+  right: 60px;
 }
 #projects .carousel-tracker {
   position: absolute;
@@ -543,7 +542,6 @@ header .header-text {
 #projects .projects-list li {
   width: 100%;
   margin: 0 auto;
-  background-color: #b5d0fa;
   padding: 20px 0;
   position: absolute;
   top: 0;
@@ -566,11 +564,12 @@ header .header-text {
 }
 #projects .projects-list li img {
   height: 250px;
-  width: 100%;
+  width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  margin: 0 auto;
 }
 
 #contact {
@@ -643,6 +642,9 @@ footer p {
 @media (max-width: 615px) {
   .skill-list li {
     margin: 40px;
+  }
+  #projects .projects-list li img {
+    width: 70%;
   }
 }
 @media (max-width: 515px) {

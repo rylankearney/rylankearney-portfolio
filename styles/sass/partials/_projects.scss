@@ -28,14 +28,14 @@
 		}
 
 		.left-button {
-			left: 1%;
+			left: 60px;
 			z-index: 1;
 		}
 
 		/*.hidden {display: none;}*/
 
 		.right-button {
-			right: 1%;
+			right: 60px;
 		}
 
 		.carousel-tracker {
@@ -61,7 +61,6 @@
 		li {
 			width: 100%;
 			margin: 0 auto;
-			background-color: variables.$light-blue;
 			padding: 20px 0;
 			position: absolute;
 			top: 0;
@@ -83,9 +82,10 @@
 			}
 			img {
 				height: 250px;
-				width: 100%;
+				width: 50%;
 				object-fit: cover;
 				object-position: top;
+				margin: 0 auto;
 			}
 		
 			

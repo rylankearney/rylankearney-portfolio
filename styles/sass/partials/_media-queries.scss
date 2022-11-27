@@ -40,10 +40,11 @@
 
 @media (max-width: 615px) {
 	.skill-list {
-		li {
-			margin: 40px;
-		}
+		li { margin: 40px; }
 	}
+
+	#projects .projects-list li img { width: 70%; }
+		
 }
 
 @media (max-width: 515px) {
