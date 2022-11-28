@@ -103,5 +103,7 @@ dotsMenu.addEventListener('click', e => {
 	const targetIndex = indivDots.findIndex(dot => dot === targetDots)
 	const targetSlide = slides[targetIndex];
 
-	moveToSlide(track, currentSlide, targetSlide)
+	moveToSlide(track, currentSlide, targetSlide);
+	updateDots(currentDot, targetDots);
 })
+
